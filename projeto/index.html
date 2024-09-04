@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <title>Desafio do Rei</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.webp" alt="">
+            <p>O Rei Robert me mandou uma solicitação para comparecer aos portões do Castelo Vermelho essa manhã. A princípio me sinto assustado, afinal, oque ele poderia querer nesse momento? assim que chego ao local, ele me manda em uma expedição em busca de um minério muito importnte: O Aço Valiriano</p>
+            <button class="btn-proximo" data-proximo="1">Norte do Reino</button>
+            <button class="btn-proximo" data-proximo="2">Sul do Reino</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Primeiro, eu decido ir para o Norte, onde o frio congelante toma conta da paísagem</p>
+            <button class="btn-proximo" data-proximo="3">Procurar pelo minério em uma mina abandonada</button>
+            <button class="btn-proximo" data-proximo="4">Desistir por conta do frio daquela região e retornar</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>No Sul, eu sou recebido com muito carinho pelos aldeões locais. Porém, após algumas noites é hora de começar a procura</p>
+            <button class="btn-proximo" data-proximo="5">Explorar as colinas nas redondezas</button>
+            <button class="btn-proximo" data-proximo="6">Explorar aos riachos</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Na mina abaandonada, é encontrado um mapa que me direciona para uma caverna, 
+                Não muito longe daqui.</p>
+            <button class="btn-proximo" data-proximo="7">Ir para a caverna</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>Você retorna para a capital tomado pela vergonha, e como punição por falhar na missão é 
+                acorrentado e preso.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Após um dia longo de procura, você não encontra nada. Porém, ao anoitecer, um homem estranho te entrega um mapa, 
+                indicando uma caaverna no Norte.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Norte</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Ao investigar a gruta, é encontrado um vestígio de aço valiriano. Contudo, era muito pouco, mas deve indicar que há mais naquela região</p>
+            <button class="btn-proximo" data-proximo="8">Voltar a explorar a caverna</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>No Norte, uma tempestade de neve acaba me atingindo. Isso atrasou um pouco a busca, porém não havia mais tempo para perder.</p>
+            <button class="btn-proximo" data-proximo="9">Esperar o tempo se acalmar</button>
+            <button class="btn-proximo" data-proximo="10">Sair no meio da tempestade</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Agora sim, você finalmente encontra pilhas do aço precioso!</p>
+            <button class="btn-proximo" data-proximo="7">coletar itens</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Sua paciencia te recompensa e você pode agora explorar a planicie congelada, com algumas cavernas adiante</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a caverna</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Sair no meio da tempestade não é uma boa ideia, e você acaba quase congelando.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar aao acampamento</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo1.webp" alt="encontrando minérios incríveis">
+            <p>Depois de retornar a capital, o rei te recompensa com uma fortuna!</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Adentrando a caverna próxima, você finalmente se encontra com os minérios.</p>
+            <button class="btn-proximo" data-proximo="11">Retornar para a capital.</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
